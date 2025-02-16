@@ -12,3 +12,5 @@ public class LaunchIndicator : MonoBehaviour
         transform.rotation = Quaternion.Euler(0,transform.rotation.eulerAngles.y,0);
     }
 }
+
+// Arrow2 by Bharadwaj B [CC-BY] via Poly Pizza
