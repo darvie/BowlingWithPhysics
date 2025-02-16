@@ -575,6 +575,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c402a19f4db11ff4bbdbf1dca689d009, type: 3}
+--- !u!4 &238290075 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5121880358813129546, guid: c402a19f4db11ff4bbdbf1dca689d009, type: 3}
+  m_PrefabInstance: {fileID: 238290074}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &504439264
 GameObject:
   m_ObjectHideFlags: 0
@@ -938,6 +943,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 685e51738e4f840278d2e90d7b512c1f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &704544093 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5951674791306367514, guid: c402a19f4db11ff4bbdbf1dca689d009, type: 3}
+  m_PrefabInstance: {fileID: 238290074}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &882174704
 GameObject:
   m_ObjectHideFlags: 0
@@ -1278,6 +1288,9 @@ MonoBehaviour:
   OnSpacePressed:
     m_PersistentCalls:
       m_Calls: []
+  OnResetPressed:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!4 &1248088056
 Transform:
   m_ObjectHideFlags: 0
@@ -1307,6 +1320,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   score: 0
   scoreText: {fileID: 1707523886}
+  ball: {fileID: 1271817449}
+  pinCollection: {fileID: 704544093}
+  pinAnchor: {fileID: 238290075}
+  inputManager: {fileID: 1248088055}
+--- !u!114 &1271817449 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4894178769843988395, guid: 69229598215634b5991f355cbec2547b, type: 3}
+  m_PrefabInstance: {fileID: 8509977334592205377}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 12c76fb298cd85e49a1b931755370407, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1674993342
 GameObject:
   m_ObjectHideFlags: 0

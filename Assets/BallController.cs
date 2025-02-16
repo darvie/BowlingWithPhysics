@@ -19,7 +19,7 @@ public class BallController : MonoBehaviour
         transform.parent = ballAnchor;
         transform.localPosition = Vector3.zero;
         ballRB.isKinematic = true;
-
+        ResetBall();
     }
 
     // Update is called once per frame
@@ -32,5 +32,14 @@ public class BallController : MonoBehaviour
         launchIndicator.gameObject.SetActive(false);
         ballRB.isKinematic = false;
         ballRB.AddForce(transform.forward * force*10, ForceMode.VelocityChange);
+    }
+
+    public void ResetBall(){
+        isBallLaunched = false;
+        ballRB.isKinematic = true;
+        launchIndicator.gameObject.SetActive(true);
+        transform.parent = ballAnchor;
+        transform.localPosition = Vector3.zero;
+
     }
 }
